@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+
+{% block body %}
+    <form method="POST" class="read-form">
+    {% csrf_token %}
+        <input type="text" placeholder="Masterkey" name="entered-key" class="input-field">
+        <input type="text" placeholder="website" name="website-name" class="input-field">
+        <button type="submit">Submit</button>
+    </form>
+
+{% endblock body %}
+
+
+

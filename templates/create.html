@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+{% block body %}
+    <form class="input-div" method="POST"> 
+        {% csrf_token %}
+        <input type="text" name="entered-key" placeholder="Master Key" class="input-field">
+        <input type="text" name="email" placeholder="email address" class="input-field">
+        <input type="password" name="password" placeholder="password" class="input-field">
+        <input type="text" placeholder="website name" name="website-name" class="input-field">
+        <button type="submit">Submit</button> 
+    </form> 
+{% endblock body %}
+
+
+
