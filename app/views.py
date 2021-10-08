@@ -1,8 +1,8 @@
 from django.http.response import HttpResponse
 from django.shortcuts import redirect, render,HttpResponse,redirect 
-import pymongo
-from pymongo import collection
-from pymongo.common import clean_node 
+import pymongo 
+import random 
+from string import printable
 
 MASTER_KEY = "saksham"
 CLIENT = pymongo.MongoClient("mongodb://localhost:27017/")
@@ -40,7 +40,6 @@ def create(request):
     return render(request,"create.html")
 
 
-
 def read(request):
     global MASTER_KEY,CLIENT,DB,COLLECTION
 
@@ -66,4 +65,3 @@ def read(request):
             return render(request,"result.html",{"advice" : "The key provided is not the master key"})
 
     return render(request,"read.html") 
-
