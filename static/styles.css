@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Teko:wght@600&family=Titillium+Web:wght@600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+::selection{
+    background-color: black;
+    color: white;
+}
+body{
+    background-color: rgb(30,30,30);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Anton', sans-serif;
+}
+.heading{
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 5vw;
+}
+
+.create-read-div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 120px; padding-right: 120px;
+    padding-top: 50px; padding-bottom: 50px;
+    margin: 50px;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}.create-read-div:hover{
+    box-shadow: 0 10px 10px rgb(220,220,220);
+}
+.home-btn{
+    margin: 10px;
+    width: 130px;
+    height: 65px;
+    cursor: pointer;
+    border: solid rgb(30,30,30) 2px;
+    border-radius: 25px;
+    transition: 0.65s;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}.home-btn:hover{
+    background-color: rgb(30,30,30);
+    color: white;
+    box-shadow: 0px 10px 10px rgb(30,30,30);
+}
+
+/*styling create section*/
+.input-form-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    padding: 50px;
+}
+.input-field{
+    margin: 8px; 
+    padding: 3px;
+    border: solid black 1.5px;
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+}.input-field:focus{
+    background-color: rgb(117, 216, 255);
+}.input-field::placeholder{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+}.submit-btn{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border: solid rgb(30,30,30) 2px;
+    border-radius: 20px;
+    background-color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 17px;
+    transition: 0.8s;
+}.submit-btn:hover{
+    background-color: rgb(30,30,30);
+    color: white;
+    box-shadow: 0px 10px 10px rgb(30,30,30);
+}
+.password-suggestion-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 75px;
+}
+
+#suggested-password-btn{
+    width: 200px;
+    height: 50px;
+    border: solid rgb(30,30,30) 1.5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+    border: none;
+    background-color: white;
+    transition: 0.6s;
+    margin: 10px;
+}#suggested-password-btn:hover{
+    background-color: red;
+    color: white;
+    box-shadow: 0px 10px 10px red;
+}
+#suggested-password{
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(30,30,30);
+}
+
+/*styling read*/
+.read-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50px;
+    padding: 50px;
+}
